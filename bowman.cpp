@@ -12,27 +12,30 @@ Bowman::~Bowman()
 
 void Bowman::advance()
 {
-	static int a = 50;
+	static int a = 60;
 	static int b = 0;
 	b++;
-	static int c = 1;
-	if (b % 500 == 0)
+	static int c = 5;
+	if (b == 120 - abs(a - 90))
 	{
 		b = 0;
-		if (a <= 90 && a >= 0)
+		if (a >= 0 && a <= 180)
 		{
-			arrow.push_back(Arrow(0, 0, a, 10));
-			a += 1 * c;
+			arrow.push_back(Arrow(500, 100, a, 10));
+			a += c;
 		}
 		else
 		{
-			a -= c * 1;
+			a -= c;
 			c *= -1;
 		}
 	}
 	for (std::vector<Arrow>::iterator i = arrow.begin(); i < arrow.end(); ++i)
 	{
-		i->advance();
+		for (int j = 0; j < 10; ++j)
+		{
+			i->advance();		
+		}
 		if (!i->actual())
 		{
 			arrow.erase(i);

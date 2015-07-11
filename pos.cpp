@@ -57,6 +57,7 @@ const double Pos::dist(const Pos& other) const
 
 const double Pos::angle() const
 {
+	if (dist() == 0) return 0;
 	if (y > 0)
 		return acos(x / dist());
 	else
@@ -64,6 +65,7 @@ const double Pos::angle() const
 }
 const double Pos::angle(const Pos& other) const
 {
+	if (dist(other) == 0) return 0;
 	if (y - other.y > 0)
 		return acos((x - other.x) / dist(other));
 	else

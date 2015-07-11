@@ -12,6 +12,7 @@ void specialKeyboard(int key, int x, int y);
 
 int main(int argc, char *argv[])
 {
+	srand(time(NULL));
 	glutInit(&argc, argv);
 	int w = glutGet(GLUT_SCREEN_WIDTH) - 200;
 	int h = glutGet(GLUT_SCREEN_HEIGHT) - 200;
@@ -38,10 +39,6 @@ void display()
 {
 	glClear(GL_COLOR_BUFFER_BIT);
 	static Bowman bowman;
-	bowman.advance();
-	bowman.advance();
-	bowman.advance();
-	bowman.advance();
 	bowman.advance();
 	bowman.render();
 	glutSwapBuffers();

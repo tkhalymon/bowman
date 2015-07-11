@@ -17,7 +17,7 @@ Arrow::Arrow(int x, int y, double angle, double speed)
 	prevPos = Pos(x - 1, y);
 	pos = Pos(x, y);
 	this->speed.fromPolar(angle, speed);
-	this->angle = angle / 180.0 * acos(-1) - acos(-1) / 4;
+	this->angle = angle / 180.0 * acos(-1) + acos(-1) / 8 * (rand() % 20 - 10) / 10;
 	angleSpeed = 0;
 }
 
@@ -38,8 +38,8 @@ void Arrow::advance()
 	{
 		angle += 2 * PI;
 	}
-	angleSpeed += (angle - pos.angle(prevPos)) * speed.dist() / 10;// / 180 * PI;
-	angleSpeed *= 0.999;
+	angleSpeed += (angle - pos.angle(prevPos)) * speed.dist() / 1;// / 180 * PI;
+	angleSpeed *= 0.99;
 	// angle = pos.angle(prevPos);
 	angle -= angleSpeed / 10000;
 	speed.sety(speed.gety() - 0.01);
@@ -47,9 +47,9 @@ void Arrow::advance()
 	int ang;
 	if (pos.gety() - prevPos.gety() > 0) ang = 1;
 	else ang = -1;
-	pos.setx(pos.getx() + speed.getx() * 0.1);
-	pos.sety(pos.gety() + speed.gety() * 0.1);
-
+	speed *= 0.9999;
+	pos += speed * 0.1;
+	
 	// if (ang == 1 && pos.gety() - prevPos.gety() < 0)
 	// {
 	// 	angle -= 2 * PI;
@@ -88,10 +88,10 @@ void Arrow::render()
 bool Arrow::actual() const
 {
 
-	if (pos.getx() > glutGet(GLUT_WINDOW_WIDTH)) return false;
-	if (pos.getx() < 0) return false;
-	if (pos.gety() > glutGet(GLUT_WINDOW_HEIGHT)) return false;
-	if (pos.gety() < 0) return false;
+	if (pos.getx() > glutGet(GLUT_WINDOW_WIDTH) + 50) return false;
+	if (pos.getx() < -50) return false;
+	if (pos.gety() > glutGet(GLUT_WINDOW_HEIGHT) * 5) return false;
+	if (pos.gety() < -50) return false;
 	return true;
 }
 
