@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"for",
+				"for	For Loop"
+			],
+			[
+				"angle",
+				"angle	double"
+			],
+			[
+				"ge",
+				"gety() const	const double"
+			],
+			[
+				"an",
+				"angle(const Pos &other) const	const double"
+			],
+			[
 				"GLUT_WINDI",
 				"GLUT_WINDOW_WIDTH	macro"
 			],
@@ -44,10 +60,6 @@
 				"midEnd	Position"
 			],
 			[
-				"ge",
-				"getY()	double"
-			],
-			[
 				"glVe2d",
 				"glVertex2d(GLdouble x, GLdouble y)	void"
 			],
@@ -62,10 +74,6 @@
 			[
 				"begi",
 				"begin	NodeRef"
-			],
-			[
-				"for",
-				"forv	Vector For Loop"
 			],
 			[
 				"ed",
@@ -371,7 +379,7 @@
 			"file": "main.cpp",
 			"settings":
 			{
-				"buffer_size": 1510,
+				"buffer_size": 1617,
 				"line_ending": "Unix"
 			}
 		},
@@ -388,7 +396,7 @@
 			"file": "bowman.cpp",
 			"settings":
 			{
-				"buffer_size": 693,
+				"buffer_size": 674,
 				"line_ending": "Unix",
 				"name": "bowman.cpp"
 			}
@@ -397,7 +405,7 @@
 			"file": "arrow.hpp",
 			"settings":
 			{
-				"buffer_size": 358,
+				"buffer_size": 394,
 				"line_ending": "Unix",
 				"name": "arrow.hpp"
 			}
@@ -406,7 +414,7 @@
 			"file": "arrow.cpp",
 			"settings":
 			{
-				"buffer_size": 1277,
+				"buffer_size": 1765,
 				"line_ending": "Unix",
 				"name": "arrow.cpp"
 			}
@@ -415,7 +423,7 @@
 			"file": "pos.hpp",
 			"settings":
 			{
-				"buffer_size": 494,
+				"buffer_size": 1320,
 				"line_ending": "Unix"
 			}
 		},
@@ -423,7 +431,7 @@
 			"file": "pos.cpp",
 			"settings":
 			{
-				"buffer_size": 988,
+				"buffer_size": 1815,
 				"line_ending": "Unix"
 			}
 		},
@@ -635,6 +643,29 @@
 		"find_history":
 		[
 			"2",
+			"5",
+			"70",
+			"30",
+			"int",
+			"Pos",
+			"tail[i].",
+			"100",
+			"30",
+			"70",
+			"i",
+			"angle",
+			"0",
+			"int",
+			"const",
+			"*",
+			"x",
+			"operator",
+			"-",
+			"+",
+			"5",
+			"bowman",
+			"5",
+			"2",
 			"angle",
 			"int",
 			"2",
@@ -738,30 +769,7 @@
 			"i",
 			"endl",
 			"зчитуємо",
-			"inputFile",
-			"input",
-			"pause",
-			"#",
-			"int",
-			"goodStudent",
-			"goodStudNum",
-			"групи",
-			"l",
-			"int",
-			"group",
-			"marks",
-			"++",
-			"i",
-			"++)",
-			"++i",
-			"groups",
-			"max_color",
-			"remove_las",
-			"card_num",
-			"i",
-			"int",
-			"n",
-			"k"
+			"inputFile"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -787,15 +795,15 @@
 					"file": "main.cpp",
 					"settings":
 					{
-						"buffer_size": 1510,
+						"buffer_size": 1617,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								497,
-								497
+								1176,
+								1176
 							]
 						],
 						"settings":
@@ -804,7 +812,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 58.0,
+						"translation.y": 1081.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -841,15 +849,15 @@
 					"file": "bowman.cpp",
 					"settings":
 					{
-						"buffer_size": 693,
+						"buffer_size": 674,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								347,
-								347
+								153,
+								153
 							]
 						],
 						"settings":
@@ -859,7 +867,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 174.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -869,15 +877,15 @@
 					"file": "arrow.hpp",
 					"settings":
 					{
-						"buffer_size": 358,
+						"buffer_size": 394,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								166,
-								166
+								359,
+								359
 							]
 						],
 						"settings":
@@ -887,7 +895,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 356.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -897,15 +905,15 @@
 					"file": "arrow.cpp",
 					"settings":
 					{
-						"buffer_size": 1277,
+						"buffer_size": 1765,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								740,
-								740
+								792,
+								792
 							]
 						],
 						"settings":
@@ -915,7 +923,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 609.0,
+						"translation.y": 1012.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -925,15 +933,15 @@
 					"file": "pos.hpp",
 					"settings":
 					{
-						"buffer_size": 494,
+						"buffer_size": 1320,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								185,
-								185
+								1081,
+								1081
 							]
 						],
 						"settings":
@@ -942,7 +950,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 870.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -952,15 +960,15 @@
 					"file": "pos.cpp",
 					"settings":
 					{
-						"buffer_size": 988,
+						"buffer_size": 1815,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								248,
-								248
+								192,
+								192
 							]
 						],
 						"settings":
@@ -969,7 +977,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 287.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -986,8 +994,8 @@
 						"selection":
 						[
 							[
-								20,
-								20
+								136,
+								136
 							]
 						],
 						"settings":
@@ -996,7 +1004,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 116.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1023,7 +1031,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 479.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1098,7 +1106,7 @@
 	},
 	"output.exec":
 	{
-		"height": 607.0
+		"height": 387.0
 	},
 	"replace":
 	{

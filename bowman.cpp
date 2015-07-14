@@ -13,15 +13,15 @@ Bowman::~Bowman()
 void Bowman::advance()
 {
 	static int a = 60;
-	static int b = 0;
+	static int b = 290;
 	b++;
-	static int c = 5;
-	if (b == 120 - abs(a - 90))
+	static int c = 0;
+	if (b == 300)//120 - abs(a - 90))
 	{
 		b = 0;
-		if (a >= 0 && a <= 180)
+		if (a >= 0 && a <= 90)
 		{
-			arrow.push_back(Arrow(500, 100, a, 10));
+			arrow.push_back(Arrow(50, 50, a, 10));
 			a += c;
 		}
 		else

@@ -14,8 +14,8 @@ int main(int argc, char *argv[])
 {
 	srand(time(NULL));
 	glutInit(&argc, argv);
-	int w = glutGet(GLUT_SCREEN_WIDTH) - 200;
-	int h = glutGet(GLUT_SCREEN_HEIGHT) - 200;
+	int w = glutGet(GLUT_SCREEN_WIDTH);// - 200;
+	int h = glutGet(GLUT_SCREEN_HEIGHT);// - 200;
 	glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGBA);
 	glutInitWindowSize(w, h);
 	glutCreateWindow("Bowman");
@@ -31,23 +31,27 @@ int main(int argc, char *argv[])
 	glutMotionFunc(mousePressedMove);
 	glutKeyboardFunc(keyboard);
 	glutSpecialFunc(specialKeyboard);
+	glutFullScreen();
 	glutMainLoop();
 	return 0;
 }
 
 void display()
 {
+	glPushMatrix();
 	glClear(GL_COLOR_BUFFER_BIT);
 	static Bowman bowman;
 	bowman.advance();
+	// glScaled(0.5, 0.5, 0.5);
 	bowman.render();
 	glutSwapBuffers();
+	glPopMatrix();
 }
 
 void timer(int)
 {
 	glutPostRedisplay();
-	glutTimerFunc(2, timer, 0);
+	glutTimerFunc(5, timer, 0);
 }
 
 void mousePressed(int button, int state, int x, int y)

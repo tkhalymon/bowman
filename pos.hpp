@@ -40,6 +40,12 @@ public:
 	void operator -= (Pos other);
 	const Pos operator - (Pos other) const;
 
+	void operator += (double d);
+	const Pos operator + (double other) const;
+
+	void operator -= (double d);
+	const Pos operator - (double other) const;
+
 	// multiply by koefficient
 	void operator *= (double k);
 	const Pos operator * (double k) const;
